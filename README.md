@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# React Profile Card Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a project I built as an assignment for my React course to demonstrate how components, props, and styling work together in practice. The goal was to build a single, reusable profile card component that could display unique information for multiple people without duplicating code.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+* Reusable Component Structure: The core ProfileCard component dynamically accepts and renders data like names, roles, locations, and bios using React props.
+* Interactive Button State: I added a basic click event to the Follow button using React's useState hook. Clicking the button toggles its state to Following and updates the background color to give real-time feedback.
+* Clean Layout and Design: The layout uses Flexbox to keep everything aligned cleanly. Even if one profile bio is longer than the others, the cards stay a uniform height and the buttons align perfectly along the bottom row.
+* Localized Context: One of the profile cards is explicitly customized around a Kenyan context, highlighting a Software Engineer profile based in Nairobi.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React.js (Functional components, props, and hooks)
+* Vanilla CSS (Flexbox, hover states, and smooth transitions)
+* Semantic HTML5
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Run This Project Locally
 
-### `npm test`
+If you want to pull this project down and run it on your own machine, you can follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine:
+   git clone https://github.com/Lereiya/react-profile-card-component.git
 
-### `npm run build`
+2. Navigate into the project folder:
+   cd react-profile-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install all the necessary dependencies:
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the local development server:
+   npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Your browser should automatically open up to http://localhost:3000 where you can see the cards in action.
