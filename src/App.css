@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.profile-card {
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  width: 280px;
+  background-color: #d1d5db;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-card h2 {
+  font-size: 24px;
+  color: #111827;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-card .role {
+  font-size: 16px;
+  color: #1d4ed8;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.profile-card .location {
+  font-size: 14px;
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.profile-card .bio {
+  font-size: 14px;
+  color: #1f2937;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.profile-card .follow-btn {
+  background-color: #3b82f6;
   color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-card .follow-btn:hover {
+  background-color: #2563eb;
 }

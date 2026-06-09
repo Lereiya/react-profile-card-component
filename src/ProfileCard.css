@@ -1,0 +1,77 @@
+/* src/ProfileCard.css */
+
+.profile-card {
+  border: 3px solid #111827;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  width: 280px;
+  background-color: #d1d5db; /* Matches the nice gray shade from your screenshot */
+  font-family: Arial, sans-serif;
+  
+  /* Flexbox settings to enforce equal height layout alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect to make the cards look interactive */
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+  color: #111827;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.role {
+  color: #1d4ed8;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.location {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.bio {
+  color: #1f2937;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.follow-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.follow-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* New: Styling variations for when the user clicks 'Following' */
+.follow-btn.following {
+  background-color: #10b981; /* Green color to represent an active state */
+}
+
+.follow-btn.following:hover {
+  background-color: #059669;
+}
